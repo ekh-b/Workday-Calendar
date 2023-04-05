@@ -3,15 +3,19 @@
 // Date/time- Display current date at the top of the calendar when a user opens the planner
 // need to look at moment.js
 
-var timeDisplayEl = $('#time-display'); //Use this refernce for DOM elements??
+//var timeDisplayEl = $('#currentDay'); //Use this refernce for DOM elements??
 
-function displayTime(){
-var currentTime = moment().format("MMM Do YY"); 
-timeDisplayEl.text(currentTime);
+//function displayTime(){
+//var currentTime = moment().format("MMM Do YY"); 
+//timeDisplayEl.text(currentTime);
 
-}
+//}
 
+var today = moment();
+$("#currentDay").text(today.format("dddd Do MMMM YYYY "));
 
+var time = moment();
+$("#currentTime").text(today.format("LT"));
 
  
 
