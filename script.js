@@ -14,6 +14,8 @@
 var today = moment();
 $("#currentDay").text(today.format("dddd Do MMMM YYYY "));
 
+
+// not sure how to get the second to coninuely update- might need a prevent function??
 var time = moment();
 $("#currentTime").text(today.format("LT"));
 
@@ -36,7 +38,7 @@ $("#currentTime").text(today.format("LT"));
 
 
 
-//Refresh function- persists events between refreshes of a page
+//Refresh function- persists events between refreshes of a page- this part might updte the time
 
 
 
